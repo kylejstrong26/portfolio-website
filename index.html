@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyle Strong</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/favicon-32x32.png"
+    />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+          <span class="h3 fw-bold d-block d-lg-none">Kyle Strong</span>
+          <img
+            src="./assets/images/head3.png"
+            class="d-none d-lg-block rounded-circle"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- //NAVBAR -->
+
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
+      <!-- HOME -->
+      <section id="home" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10">
+              <h1 class="display-4 fw-bold" data-aos="fade-up">
+                I'M A <span class="text-brand">CLOUD SPECIALIST</span> FROM
+                TORONTO, CA
+              </h1>
+              <p
+                id="purple"
+                class="lead mt-2 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                I'm Kyle Strong, and I specialize in AWS cloud and solutions
+                architecture.
+              </p>
+              <div data-aos="fade-up" data-aos-delay="600">
+                <a href="#about" class="btn btn-brand me-3">ABOUT ME</a>
+                <a
+                  href="./assets/files/Resume - Kyle Strong.pdf"
+                  download
+                  class="link-custom"
+                  >DOWNLOAD CV</a
+                >
+                <br />
+                <br />
+                <div class="social-icons">
+                  <a
+                    href="https://www.linkedin.com/in/kylejstrong/"
+                    target="_blank"
+                    ><i class="lab la-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //HOME -->
+
+      <!-- WORK -->
+      <section id="work" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">WORK</h6>
+              <h1>My Recent Projects</h1>
+            </div>
+          </div>
+
+          <div class="row gy-4">
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    class="rounded-4"
+                    src="./assets/images/projectPic1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>AWS Three-Tier Application</h4>
+                  <p>
+                    VPC designed with public web tier, private application and
+                    database tier. Internet Gateway passes traffic through NAT
+                    Gateway to private EC2 Auto-Scaling Group. Processed traffic
+                    then queried to RDS instances. All routes managed through
+                    the route table.
+                  </p>
+                  <a href="" class="link-custom">Built On AWS</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    class="rounded-4"
+                    src="./assets/images/todo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Serverless To-Do App</h4>
+                  <p>
+                    Serverless application built using Vue, Lambda, DynamoDB and
+                    API Gateway. Lambda function sends inputted task to DynamoDB
+                    table, Vue initiates Lambda GET function to pull stored
+                    tasks and lists them on the interface.
+                  </p>
+                  <br />
+                  <a
+                    href="https://github.com/kylejstrong26/portflio/tree/portfolio"
+                    class="link-custom"
+                    target="_blank"
+                    >View In Github</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    class="rounded-4"
+                    src="./assets/images/terraform.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Terraform File System Directory</h4>
+                  <p>
+                    Web app infrastructure built using Terraform. Launches
+                    services include Route 53, EC2, S3, and ALB as well as
+                    incorporating Consul services for a more rigid application.
+                    Application structured in a file system directory utilizing
+                    three backend systems: global, production, and staging.
+                  </p>
+                  <a
+                    href="https://github.com/kylejstrong26/portflio/tree/portfolio"
+                    class="link-custom"
+                    target="_blank"
+                    >View In Github</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    class="rounded-4"
+                    src="./assets/images/kub-docker.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Kubernetes / Docker Monitoring App</h4>
+                  <p>
+                    Python scripted Flask application used to monitor user's
+                    computer CPU and memory usage. Containerized with Docker,
+                    hosted in ECR and managed using EKS.
+                  </p>
+                  <br />
+                  <a
+                    href="https://github.com/kylejstrong26/portflio/tree/portfolio"
+                    class="link-custom"
+                    target="_blank"
+                    >View In Github</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    class="rounded-4"
+                    src="./assets/images/projectPic2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Portfolio Website</h4>
+                  <p>
+                    Built on Bootstrap HTML, CSS, and JavaScript. Static content
+                    hosted in a S3 bucket distributed through Cloudfront,
+                    secured using ACM, and linked to a third-party domain.
+                  </p>
+                  <a
+                    href="https://github.com/kylejstrong26/portflio/tree/portfolio"
+                    class="link-custom"
+                    target="_blank"
+                    >View In Github</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //WORK -->
+
+      <!-- ABOUT -->
+      <section id="about" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">ABOUT</h6>
+              <h1>My Life</h1>
+            </div>
+          </div>
+
+          <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+            Software engineer by trade, I have a background in development
+            alongside commerce fundamentals. AWS is my expertise regarding cloud
+            computing but am always exploring innovative cloud technologies. On
+            top of cloud computing, I have experience in front-end & back-end
+            development. I want to enable companies to amplify operations
+            through cloud computing by building efficient and effective
+            architectures for their solutions.
+          </p>
+
+          <div class="row gy-5">
+            <div class="col-lg-6">
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">
+                Education
+              </h3>
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Software Engineering</h4>
+                    <p class="text-brand mb-2">Sheridan College (2020-2022)</p>
+                    <p class="mb-0">
+                      Developed core full-stack skills across multiple
+                      languages.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Bachelors Of Commerce</h4>
+                    <p class="text-brand mb-2">
+                      McMaster University (2017-2018)
+                    </p>
+                    <p class="mb-0">
+                      Explored the fundamentals of successful business
+                      practices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">
+                Certifications
+              </h3>
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>AWS Certified Solutions Architect</h4>
+                    <p class="text-brand mb-2">2023</p>
+                    <p class="mb-0">
+                      Enhanced architectural knowledge of the AWS library.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>AWS Cloud Practitioner</h4>
+                    <p class="text-brand mb-2">2022</p>
+                    <p class="mb-0">
+                      Learned core AWS components and architecture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //ABOUT -->
+
+      <!-- CONTACT -->
+      <section id="contact" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4" data-aos="fade-up">
+              <h6 class="text-brand">CONTACT</h6>
+              <h1>Interested? Let's talk.</h1>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+              <form
+                action="https://formsubmit.co/strong.j.kyle@gmail.com"
+                method="POST"
+                class="row g-lg-3 gy-3"
+              >
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    name="name"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    name="email"
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter subject"
+                    name="subject"
+                  />
+                </div>
+                <input type="hidden" name="_captcha" value="false" />
+                <div class="form-group col-12">
+                  <textarea
+                    name="message"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <input type="hidden" name="_next" value="#contact" />
+                <div class="form-group col-12 d-grid">
+                  <button
+                    onclick="myFunction2()"
+                    type="submit"
+                    class="btn btn-brand"
+                    value="not"
+                    id="myButton"
+                  >
+                    Contact me
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //CONTACT -->
+
+      <!-- FOOTER -->
+      <footer class="py-5 px-lg-5">
+        <div class="container">
+          <div class="row gy-4 justify-content-between">
+            <div class="col-auto">
+              <p class="mb-0">
+                Kyle Strong <a href="#" class="fw-bold">2023</a>
+              </p>
+            </div>
+            <div class="col-auto">
+              <div class="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/kylejstrong/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="lab la-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- //FOOTER -->
+    </div>
+    <!-- //CONTENT WRAPPER -->
+
+    <script>
+      function myFunction2() {
+        var btn = document.getElementById("myButton");
+
+        if (btn.value == "not") {
+          btn.value = "contacted";
+          btn.innerHTML = "Thank You!";
+        } else {
+          btn.value = "Not";
+          btn.innerHTML = "Contact me";
+        }
+      }
+    </script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
